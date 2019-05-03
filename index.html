@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Word Finder</title>
+
+	<script type="text/javascript" src="word_finder.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div id="settings" class="flex_elem">
+			<div class="w_wrapper">
+				<h2>Settings</h2>
+			</div>
+			<div class="form wrapper">
+				<div class="wrapper input_wrapper">
+					<span class="label flex_elem">Word:</span><input id="word_to_find" class="flex_elem" type="text" value="potato"></input>
+				</div>
+				<div class="wrapper input_wrapper">
+					<span class="label flex_elem">Population:</span><input id="num_population" class="flex_elem" type="number" min="2" value="200"></input>
+				</div>
+				<div class="wrapper input_wrapper">
+					<span class="label flex_elem">Mutation Rate:</span><input id="mutation_rate" class="flex_elem" type="number" min="0.01" max="1" step="0.01" value="0.1"></input>
+				</div>
+				<div class="wrapper input_wrapper">
+					<input id="start_search" class="flex_elem start" type="button" value="Start"></input>
+				</div>
+				<div class="wrapper input_wrapper">
+					<input id="restart_search" class="flex_elem start" type="button" value="Restart"></input>
+				</div>
+				<div class="wrapper input_wrapper">
+					<input id="next_gen" class="flex_elem start" type="button" value="Next Gen"></input>
+				</div>
+			</div>
+			<div class="form wrapper">
+				<div class="wrapper input_wrapper">
+					<span class="label flex_elem">Fittest:</span><input id="fittest" class="flex_elem" disabled></input>
+				</div>
+				<div class="wrapper input_wrapper">
+					<span class="label flex_elem">Generation:</span><input id="generation" class="flex_elem" disabled></input>
+				</div>
+				<div class="wrapper input_wrapper">
+					<span class="label flex_elem">AVG. Fitness:</span><input id="avgfitness" class="flex_elem" disabled></input>
+				</div>
+			</div>
+		</div>
+		<div id="population" class="flex_elem">
+			<div class="w_wrapper">
+				<h2>Population</h2>
+			</div>
+			<div id="population_wrapper" class="wrapper"></div>
+		</div>
+	</div>
+</body>
+
+</html>

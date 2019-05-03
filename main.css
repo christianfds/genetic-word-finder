@@ -1,0 +1,95 @@
+/* General */
+
+html, body {
+    margin: 0px;
+    font-family: Roboto, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.w_wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.form {
+    margin: 20px;
+    width: calc(100% - 40px);
+}
+
+.flex_elem {
+    flex: 1 0 auto;
+    height: auto;
+}
+
+.start {
+    border-color: rgb(21, 163, 63) !important;
+}
+
+.stop {
+    border-color: rgb(231, 63, 63) !important;
+}
+
+.continue {
+    border-color: rgb(40, 125, 221) !important;
+}
+
+/* Sides */
+
+#settings {
+    /* width: 400px; */
+    width: 200px;
+}
+
+#population {
+    /* width: 950px; */
+    width: 475px;
+}
+
+/* INPUT */
+
+.input_wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input_wrapper .label {
+    width: 80px;
+}
+
+.input_wrapper input[type='button'], .input_wrapper input {
+    width: 200px;
+    padding: 4px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #ccc;
+    transition: border-color 0.5s;
+}
+
+.input_wrapper input[type='text']:focus, .input_wrapper input[type='number']:focus {
+    border-color: #888;
+}
+
+.input_wrapper input:focus {
+    outline: none;
+}
+
+/* Population */
+
+#population_wrapper {
+    padding: 20px;
+    width: calc(100% - 40px);
+}
+
+#population_wrapper div {
+    width: 25%;
+    /* padding-right: 10px; */
+    text-align: center;
+}
